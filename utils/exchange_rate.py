@@ -13,7 +13,6 @@ from .constants import ECB_API_URL
 def fetch_and_store_exchange_rates():
     rates = fetch_exchange_rates()
     insert_into_db(get_db(), rates)
-    print('fetching exchange_rates daily')
 
 
 def fetch_exchange_rates() -> dict:
